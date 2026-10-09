@@ -16,6 +16,8 @@ Optimize for useful and returning visits, not raw traffic. Introduce an app only
 | Give a VA safe access to Shopify | Guide | Owners (VAs second) |
 | Undo a bulk edit or import | Guide | Owners and VAs |
 | Shopify SOP and checklist builder (3 workflows) | Free tool | VAs and owners |
+| Support reply template builder (11 situations, email/SMS/chat) | Free tool | VAs and owners |
+| Plausible analytics, tool events, privacy policy update | Instrumentation | n/a |
 
 The checker is client-side, never uploads the file, has unit tests, and is built so it can be reused in a later app.
 
@@ -44,8 +46,10 @@ Combination, in this order:
 
 If a future tool needs store access: Shopify's approved authentication, least-privilege scopes, and staff or collaborator access. Never ask for passwords.
 
-## 6. Instrumentation gap
-The site currently has no analytics (no analytics script found on the homepage, guides or POPLoad pages). The brief's metrics cannot be measured yet. Needed before expanding:
+## 6. Instrumentation
+Status: Plausible chosen by the owner; code and privacy-policy update are in sms-compliance PR #32, but nothing records until the owner adds the site in Plausible, confirms the snippet matches the dashboard, and creates the goals (`Tool Start`, `Tool Complete`, `CTA Click`). Events never include typed content.
+
+Original gap: the site had no analytics (no analytics script found on the homepage, guides or POPLoad pages). The brief's metrics cannot be measured yet. Needed before expanding:
 - Privacy-friendly analytics with custom events: tool_start, tool_complete, copy/export, outbound click to an app or the contact form.
 - A line in the privacy policy covering it.
 - Search Console for impressions and queries.
@@ -62,13 +66,13 @@ Answer questions first, share a tool only when it directly helps, follow each co
 | Days 1-7 | Validate; launch one tool | Research done (rounds 1-2, verification). CSV checker and 3 guides built (PR #32). **Next:** 5-10 VA/owner interviews; decide analytics. |
 | Days 8-14 | Resource foundation: tool page, a tutorial, a downloadable checklist | SOP builder built with 3 starter SOPs (PR #32). **Next:** downloadable CSV-prep checklist; add more workflows only on request signals. |
 | Days 15-21 | Distribute and learn | Share checker and guides; collect feedback; read Search Console. |
-| Days 22-30 | Improve before expanding | Build the support reply builder only if usage and interviews support it. |
+| Days 22-30 | Improve before expanding | Support reply builder built early at the owner's request (PR #32). Next: read Plausible and Search Console data before choosing the following tool. |
 
 Metrics once instrumented: acquisition (organic, referral, new users), engagement (tool starts, completed results, repeat visits), retention (returning users, optional subscribers), business value (clicks to relevant apps or the contact form, later installs and leads).
 
 ## 9. Decisions needed from the owner
 1. Primary persona for the first 90 days: VAs, owners, or both (recommendation: both, owners as conversion target).
-2. Analytics tool to add (privacy-friendly custom events) and approval to update the privacy policy.
+2. ~~Analytics tool~~ Plausible chosen; owner still needs to add the site, verify the snippet, create goals, and review the privacy text.
 3. ~~OK to build the SOP builder first~~ Done: built as a static tool (PR #32).
 4. Who runs interviews, and whether to share an interview script (Claude can draft one).
 
