@@ -1,5 +1,7 @@
 # Concept: Shopify VA Hub
 
+> Phase order: toolkit and content on mindlabfuture-ai.com first (see [`docs/strategy/hub-strategy.md`](../strategy/hub-strategy.md)); the full app below is phase 2, once usage and interviews show which modules people return for.
+
 ## Users
 - Owner: wants to delegate safely and see results.
 - VA: wants clear tasks, the right access, and fewer tabs.
