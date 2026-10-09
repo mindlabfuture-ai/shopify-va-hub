@@ -1,5 +1,7 @@
 # Concept: Shopify VA Hub
 
+> Phase order: toolkit and content on mindlabfuture-ai.com first (see [`docs/strategy/hub-strategy.md`](../strategy/hub-strategy.md)); the full app below is phase 2, once usage and interviews show which modules people return for.
+
 ## Users
 - Owner: wants to delegate safely and see results.
 - VA: wants clear tasks, the right access, and fewer tabs.
@@ -20,6 +22,8 @@
 | C. SOP task queue | 5 | Low | Easy to build, weak moat alone |
 
 Recommendation: A + C as MVP (access, tasks, log), then B.
+
+Round 2 update: undo apps already exist (each only reverts its own edits), so B should differentiate on a cross-source change history and "VA proposes, owner approves" before bulk changes apply. Add time-phased access presets to A (read-only week 1, widen by week 4), which matches the onboarding advice owners already follow by hand.
 
 ## Technical sketch
 - Embedded Shopify app (Remix/React Router, Prisma, Postgres), Admin GraphQL API, webhooks for product/order change events feeding the activity log.

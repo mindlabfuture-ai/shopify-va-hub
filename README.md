@@ -9,5 +9,6 @@ Replace the patchwork of shared logins, spreadsheets, chat threads and SOP docs 
 
 ## Roadmap
 1. Validate pain points with primary sources (Reddit, Shopify Community, VA Facebook groups, interviews).
-2. Pick one wedge feature and build an MVP as an embedded Shopify app.
-3. Reuse auth/billing/API layers from VIPriority and POPLoad where possible.
+2. Phase 1, the toolkit: free browser tools, guides and downloadable templates on mindlabfuture-ai.com. Shipped so far (sms-compliance PR #32): CSV checker, SOP builder, support reply builder, 3 guides, and Plausible analytics (needs owner setup). Next: read the data, then decide the next tool. See [`docs/strategy/hub-strategy.md`](docs/strategy/hub-strategy.md).
+3. Instrument the site (analytics, Search Console) and set a baseline.
+4. Phase 2: build the hub app (scoped access, SOP task queue, change history) as an embedded Shopify app, reusing auth/billing/API layers from VIPriority and POPLoad.
