@@ -9,12 +9,13 @@ Funnel: free tools and guides (search traffic) -> resource library (repeat visit
 
 Optimize for useful and returning visits, not raw traffic. Introduce an app only when it is genuinely connected to what the visitor just did.
 
-## 2. Already shipped (sms-compliance PR #32, awaiting merge)
+## 2. Already shipped (sms-compliance PR #32, awaiting review and merge)
 | Asset | Type | Audience |
 |---|---|---|
 | Shopify CSV checker + import-errors guide | Free tool + guide | VAs and owners |
 | Give a VA safe access to Shopify | Guide | Owners (VAs second) |
 | Undo a bulk edit or import | Guide | Owners and VAs |
+| Shopify SOP and checklist builder (3 workflows) | Free tool | VAs and owners |
 
 The checker is client-side, never uploads the file, has unit tests, and is built so it can be reused in a later app.
 
@@ -59,7 +60,7 @@ Answer questions first, share a tool only when it directly helps, follow each co
 | Window | Plan | Status / next |
 |---|---|---|
 | Days 1-7 | Validate; launch one tool | Research done (rounds 1-2, verification). CSV checker and 3 guides built (PR #32). **Next:** 5-10 VA/owner interviews; decide analytics. |
-| Days 8-14 | Resource foundation: tool page, a tutorial, a downloadable checklist | **Next:** SOP builder page + 3 starter SOPs (upload products, process orders, handle returns); downloadable CSV-prep checklist. |
+| Days 8-14 | Resource foundation: tool page, a tutorial, a downloadable checklist | SOP builder built with 3 starter SOPs (PR #32). **Next:** downloadable CSV-prep checklist; add more workflows only on request signals. |
 | Days 15-21 | Distribute and learn | Share checker and guides; collect feedback; read Search Console. |
 | Days 22-30 | Improve before expanding | Build the support reply builder only if usage and interviews support it. |
 
@@ -68,7 +69,7 @@ Metrics once instrumented: acquisition (organic, referral, new users), engagemen
 ## 9. Decisions needed from the owner
 1. Primary persona for the first 90 days: VAs, owners, or both (recommendation: both, owners as conversion target).
 2. Analytics tool to add (privacy-friendly custom events) and approval to update the privacy policy.
-3. OK to build the SOP and checklist builder first, as a static tool.
+3. ~~OK to build the SOP builder first~~ Done: built as a static tool (PR #32).
 4. Who runs interviews, and whether to share an interview script (Claude can draft one).
 
 ## 10. Safeguards
